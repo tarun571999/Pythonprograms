@@ -1,3 +1,12 @@
+''' problem statement : Write a definition f0r a class circle with the attribute center and radius where center is the point object and
+radius is the number, instantiate the circle that represents circle with radius 75 and center at (150,100) .
+1) write a function with name point_in_circle that takes a circle and point and returns true if the point lies inside or on the boundary 
+of the circle
+2) write another function named rect_in_circle that takes circle and rectangle and returns true if the rectangle lies inside or on the boundary
+of the circle'''
+
+
+
 #tkt-- python 2nd test activity answer 13/4/2019
 
 import math
