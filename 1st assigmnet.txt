@@ -1,0 +1,239 @@
+NAME :: Tharun Kumar T
+
+
+1.print natural  no's 1 to n -- using while loop
+
+num = int(input('enter the number'))
+i=1
+while i <= num:
+    print(i,end=' ')
+    i+=1
+enter the number20
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+
+2.print natural no's n to 1 -- using while loop
+
+num = int(input('enter the number'))
+i=num
+while i > 0:
+    print(i,end=' ')
+    i-=1
+enter the number10
+10 9 8 7 6 5 4 3 2 1 
+
+3.print alphabets from a to z using while loop
+
+n = ord('A')
+end = ord('Z')
+while n <= end:
+    print(chr(n),end=" ")
+    n+=1
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 
+
+4.print even numbers bw 1 to 100 using while loop
+
+n=1
+while n <= 100:
+    if n%2 == 0:
+        print(n)
+
+5.print all odd no 1 to 100 using while loop
+n=1
+while n <= 100:
+    if n%2 != 0:
+        print(n)
+
+6.Find the sum of 1 to n using while loop
+
+num = int(input('enter the number'))
+sum = 0
+for i in range(1,num+1):
+	sum+= i
+print("sum is:",sum)
+
+7.count no of digits in a given num
+
+num = input('enter the number\n')
+print('the number of digits in the given number is:'len(num))
+
+8.find 1st and last digit of a number
+
+num = input('enter the number\n')
+print('the 1st and last digit of the given number is:' num[0],num[len(num)-1])
+
+9.swap 1st and last digits of a number
+
+num = input('enter the number\n')
+n = num[len(num)-1]+num[1:len(num)-1]+num[0]
+print(int(n))
+
+10. sum of digits in a given number
+
+num = input('enter the number\n')
+sum=0
+for i in num:
+    sum+= int(i)
+print('sum is:',sum)
+
+11.enter a num and reverse it
+
+num = input('enter the number\n')
+l = list(num)
+l.reverse()
+n1 = ''
+for i in l:
+    n1 = n1 + i
+print('reversed number is',int(n1))
+
+12.check for palindrome
+
+num = input('enter the value\n')
+l = list(num)
+l.reverse()
+n1 = ''
+for i in l:
+    n1 = n1 + i
+num = int(num)
+n1 = int(n1)
+if num == n1:
+	print('given value is palindrome\n')
+else:
+	print('not a palindrome\n')
+
+
+13.to find frequency of each digit in a integer
+
+num = input('enter the number\n')
+d={}
+
+for i in num:
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]+=1
+print(d)
+
+14.all ascii in a value
+
+num = input('enter the value\n')
+for i in num:
+    print(ord(i))
+
+15.power of a num
+n = int(input())
+m=int(input())
+print('power is ',n**m)
+
+16.calculate factorial of a number
+
+def fact(num):
+    if num == 1:
+        return 1
+    else:
+        return num*fact(num-1)
+
+fact(6)
+Out[79]: 720
+
+17. find hcf
+
+def hcf(a,b):
+    if a>b:
+        small = b
+    else:
+        small = a
+    for i in range(1,(small//2)+1):
+        if a%i ==0 and b%i == 0:
+            h = i
+    return h
+    
+
+hcf(54,24)
+Out[82]: 6
+
+18. find gcd
+
+def gcd(a,b):
+    if a>b:
+        small = b
+    else:
+        small = a
+    for i in range(1,(small//2)+1):
+        if a%i ==0 and b%i == 0:
+            h = i
+    return h
+    
+
+gcd(54,24)
+Out[82]: 6
+
+19. find lcm
+
+def lcm(x, y):
+   if x > y:
+       greater = x
+   else:
+       greater = y
+
+   while(True):
+       if((greater % x == 0) and (greater % y == 0)):
+           lcm = greater
+           break
+       greater += 1
+
+   return lcm 
+
+20. find whether given num is prime r not
+
+def prime(num):
+    for i in range(2,(num//2)+1):
+        if num % i == 0:
+            print('given number is not prime\n')
+            return
+    print('the given number is prime\n')
+    
+
+prime(20)
+given number is not prime
+
+21. all prime no's bw 1 to n
+
+def prime(num):
+    for i in range(2,(num//2)+1):
+        if num % i == 0:
+		return False
+    return True
+def primenos(num):
+    for i in range(1,num+1):
+        if(prime(i)):
+            print(i)
+primenos(100)
+
+
+22.find all prime factors of a num
+
+
+
+
+23. find one's complement of a number
+
+def onescomplement(bin):
+    num = ''
+    for i in range(len(bin)):
+        if bin[i]=='0':
+            num+='1'
+        else:
+            num+='0'
+    return int(num)
+    
+
+onescomplement('1010101010')
+Out[10]: 0101010101
+ 
+
+
+
+    
+
+
+

@@ -1,0 +1,135 @@
+				ASSIGNMENT IN PYTHON PROGRAMMING (TECHFORTUNE TECHNOLOGIES)	
+
+NAME :: THARUN KUMAR T
+COLLEGE NAME :: BNM INSTITUTE OF TECHNOLOGY
+MORNING BATCH -- 7 30 AM
+
+
+
+1. find number of occurences of each vowels in a given string
+
+st='hello'
+d={}
+l=['a','e','i','o','u']
+for i in st:
+    if i in l:
+        d[i] = d.get(i,0)+1
+
+d
+Out[4]: {'e': 1, 'o': 1}
+
+2. program to accept name and marks input() and create a dictionary ,display student details by name
+
+d={}
+name = input()
+marks = map(int,input().split())
+d[name]=marks
+
+querry_name = input('enter the name to be searched\n')
+if querry_name in d:
+	print(d[querry_name])
+
+
+3. function to accept 2 no's as input and return sum
+
+def sum(a,b):
+	return a+b
+
+a = int(input())
+b = int(input())
+sum(a,b)
+
+
+4. function to check whether the given no is even or odd
+
+def evrodd(num):
+	if num%2 == 0:
+		print('number is even\n')
+	else:
+		print('number is odd\n')
+
+evrodd(20)
+
+
+5. func to find fact(num)
+
+def fact(num):
+	fact=1
+	for i in range(1,num+1):
+		fact*=i
+	return fact
+fact(10)
+3628800
+
+	
+6. func to find fact using  recursion
+def fact(num):
+	if num==1:
+		return 1
+	else:
+		return num*fact(num-1)
+
+fact(10)
+3628800
+		
+7. find lambda func to find sqaure
+
+x=lambda x:x**2
+num = int(input())
+x(num)
+
+8. pgm to enter a name and percentage marks in dict and display information 
+
+d={}
+name = input()
+marks = map(int,input().split())
+d[name]=marks
+
+querry_name = input('enter the name to be searched\n')
+if querry_name in d:
+	print(d[querry_name])
+
+9. different vowels in word
+
+st='hello'
+d={}
+l=['a','e','i','o','u']
+for i in st:
+    if i in l:
+        d[i] = d.get(i,0)+1
+for i in d:
+	print('the different vowels in the given string is/are :'i)
+
+10. eliminate duplicate elements in a string
+
+st = input('Enter the string\n')
+s = set(st)
+new = ''
+for i in s:
+	new+=i
+print(new)
+
+11. to display unique vowels in a given word
+
+
+st='hello'
+d={}
+l=['a','e','i','o','u']
+for i in st:
+    if i in l:
+        d[i] = d.get(i,0)+1
+
+fpr i in d:
+	print('the unique vowels are',i)
+
+12. find no of occurences of alphabets in  given string 
+
+s = 'hello'
+d={}
+for i in s:
+	d[i] = d.get(i,0)+1
+print(d)
+
+
+
+

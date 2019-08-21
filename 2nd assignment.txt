@@ -1,0 +1,182 @@
+NAME :: Tharun Kumar T
+
+1. Verify if the given string is palindrome
+
+12.check for palindrome
+
+s= input('enter the string\n')
+l = list(s)
+l.reverse()
+n1 = ''
+for i in l:
+    n1 = n1 + i
+
+if s == n1:
+	print('given value is palindrome\n')
+else:
+	print('not a palindrome\n')
+
+
+2. Find the highest ascii value in a given string
+
+st = input()
+n = max(s)
+print(ord(n))
+
+3. Print true if the given sentence ends with a "holiday"
+
+sentence = input('enter the sentence\n')
+if sentence.endswith('holiday'):
+	print('True')
+ 
+
+4. Unicode value of a given string
+
+name = input()
+for i in name:
+	print(ord(i))
+
+
+5. Given input string, add 4 spaces in the end and use full stop in the end.
+
+s = input('enter the input string\n')
+l = list(s)
+l.extend([' ',' ',' ',' ','.'])
+st = ''
+for i in l:
+	st+=i
+print(st)
+
+
+6. Convert given string into list in one line: e.g., "hello world" output = ['h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+
+lis = list("hello world")
+
+
+7. Find the sum of elements in the list e.g., [10,20,30] output = 60
+
+l =[10,20,30]
+print(sum(l))
+
+
+8. Duplicate the elements in the list e.g', list1 = [1,2,3] output = [1,2,3,1,2,3]
+
+list1 = [1,2,3]
+print(list1*2)
+
+
+
+9. Find the greater of two lists list1 = [1,2,3] and list2 = [1,2,3,4]
+
+list1 = [1,2,3]
+list2 = [1,2,3,4]
+if list1>list2:
+	print('list1 is greater\n')
+
+else:
+	print('list2 is greater\n')
+
+
+10. What are help() and dir() used for?
+
+
+
+11. Write a python program to print prime numbers between 100-300
+
+def prime(num):
+    for i in range(2,(num//2)+1):
+        if num % i == 0:
+		return False
+    return True
+
+def primenos(n1,n2):
+    for i in range(n1,n2+1):
+        if(prime(i)):
+            print(i)
+primenos(100,300)
+
+
+12. 1. Find the common elements between two lists without duplicates.
+a = [1,2,3,2,4,5,6,7,8]
+b=[1,2,4,10,11,12]
+output: [1,2,4]
+
+l=[]
+for i in a:
+	if i in b:
+		l.append(i)
+
+print(list(set(l)))
+
+
+
+13. Find the word reverse of a given sentence.
+input = "my name is virat kohli"
+output = "kohli virat is name my"
+
+lis = input.split()
+lis.reverse()
+for i in lis:
+	print(i,end=' ')
+
+
+
+14. Join list a (as keys) and list b (as values) to make a dictionary in one line.
+a = ["key1", "key2", "key3"]
+b = [1,2,3]
+
+
+
+15. Implement greatest of three numbers a=10,b=20,c=30 using ternary operator or regular if-else
+
+a = int(input())
+b = int(input())
+c = int(input())
+if a>b and a>c:
+	print('a is greatest\n')
+elif b>c:
+	print('b is greatest\n')
+else:
+	print('c is greatest\n')
+
+16.  Find int, bin, oct, hex of a number = 16
+
+17. What is the difference between .py and .pyc file?
+
+18. What is the difference between append and extend method?
+
+19. Is the memory de-allocated once you exit Python console? How garbage collector works?
+
+20. How is memory managed in Python?
+
+21. Read capital letters and punctuations from a sentence.
+
+22. join() and split() What is the difference
+explain with a sentence example.
+
+23. What does pass statement do in Python?
+
+24. Write a program to check if a given year is leap year of not.
+
+25. Write a program to check if the given pair of numbers form a right angled triangle.
+(Hint: check a2 + b2 = c2)
+
+26. Write a python program to count the number of bits set in an integer
+e.g., a = 20 (bits: 0001 0100) answer 2 bits set.s
+
+27. Write a program to check if the given number is a power of 2
+
+28. Write a program to find the highest number in the given loop.
+e.g., l1 = [10,33,45,56,78,98] output should be 98
+
+print(max(l1))
+
+
+
+29. Write a program to perform matrix multiplication
+a = [[1,2,3],[4,5,6]] b = [[1,2,3],[4,5,6],[7,8,9]]
+
+
+
+30. Write a program to reverse the bits in an integer
+e.g., a = 0x12 (0001 0010) output = (1110 1101)
